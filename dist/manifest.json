@@ -1,0 +1,45 @@
+{
+  "manifest_version": 3,
+  "name": "Ask Jules on GitHub",
+  "version": "1.0.0",
+  "description": "One-click launch Jules from GitHub issues and PRs.",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://github.com/*",
+    "https://jules.googleapis.com/*"
+  ],
+  "action": {
+    "default_popup": "src/popup.html"
+  },
+  "options_ui": {
+    "page": "src/options.html",
+    "open_in_tab": true
+  },
+  "background": {
+    "service_worker": "service-worker-loader.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "assets/content.ts-BjIfZ9bk.js"
+      ],
+      "matches": [
+        "https://github.com/*"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "matches": [
+        "https://github.com/*"
+      ],
+      "resources": [
+        "assets/content.ts-BjIfZ9bk.js"
+      ],
+      "use_dynamic_url": false
+    }
+  ]
+}
