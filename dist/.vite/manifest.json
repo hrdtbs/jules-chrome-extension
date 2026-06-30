@@ -1,0 +1,42 @@
+{
+  "../../../../../@crx/manifest": {
+    "file": "assets/crx-manifest.js-BvyB4NeP.js",
+    "name": "crx-manifest.js",
+    "src": "../../../../../@crx/manifest",
+    "isEntry": true
+  },
+  "_modulepreload-polyfill-B5Qt9EMX.js": {
+    "file": "assets/modulepreload-polyfill-B5Qt9EMX.js",
+    "name": "modulepreload-polyfill"
+  },
+  "src/background.ts": {
+    "file": "assets/background.ts-DL3gUIQG.js",
+    "name": "background.ts",
+    "src": "src/background.ts",
+    "isEntry": true
+  },
+  "src/content.ts": {
+    "file": "assets/content.ts-BjIfZ9bk.js",
+    "name": "content.ts",
+    "src": "src/content.ts",
+    "isEntry": true
+  },
+  "src/options.html": {
+    "file": "assets/options.html-BJRUVf4i.js",
+    "name": "options.html",
+    "src": "src/options.html",
+    "isEntry": true,
+    "imports": [
+      "_modulepreload-polyfill-B5Qt9EMX.js"
+    ]
+  },
+  "src/popup.html": {
+    "file": "assets/popup.html-b5CODP1j.js",
+    "name": "popup.html",
+    "src": "src/popup.html",
+    "isEntry": true,
+    "imports": [
+      "_modulepreload-polyfill-B5Qt9EMX.js"
+    ]
+  }
+}
